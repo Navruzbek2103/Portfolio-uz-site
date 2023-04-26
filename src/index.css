@@ -1,0 +1,111 @@
+/* inter-regular - cyrillic_latin */
+@font-face {
+  font-display: swap;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./assets/fonts/inter-v12-cyrillic_latin-regular.woff2")
+      format("woff2"),
+    url("./assets/fonts/inter-v12-cyrillic_latin-regular.woff") format("woff");
+}
+/* inter-500 - cyrillic_latin */
+@font-face {
+  font-display: swap;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  src: url(".asseets/fonts/inter-v12-cyrillic_latin-500.woff2") format("woff2"),
+    url(".asseets/fonts/inter-v12-cyrillic_latin-500.woff") format("woff");
+}
+/* inter-600 - cyrillic_latin */
+@font-face {
+  font-display: swap;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  src: url(".assets/fonts/inter-v12-cyrillic_latin-600.woff2") format("woff2"),
+    url(".assets/fonts/inter-v12-cyrillic_latin-600.woff") format("woff");
+}
+
+/* inter-tight-regular - cyrillic_latin */
+@font-face {
+  font-display: swap;
+  font-family: "Inter Tight";
+  font-style: normal;
+  font-weight: 400;
+  src: url(".assets/fonts/inter-tight-v2-cyrillic_latin-regular.woff2")
+      format("woff2"),
+    url(".assets/fonts/inter-tight-v2-cyrillic_latin-regular.woff")
+      format("woff");
+}
+/* inter-tight-600 - cyrillic_latin */
+@font-face {
+  font-display: swap;
+  font-family: "Inter Tight";
+  font-style: normal;
+  font-weight: 600;
+  src: url(".assets/fonts/inter-tight-v2-cyrillic_latin-600.woff2")
+      format("woff2"),
+    url(".assets/fonts/inter-tight-v2-cyrillic_latin-600.woff") format("woff");
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0 0 100px; /* bottom = footer height */
+  font-family: "Inter";
+  font-weight: 400px;
+  font-style: normal;
+}
+body::-webkit-scrollbar {
+  width: 1px;
+  background-color: #07484a;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #f8cd79;
+  outline: 5px solid #f8cd79;
+}
+footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 100px;
+  width: 100%;
+}
+
+.container {
+  max-width: 1224px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.container-big {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
