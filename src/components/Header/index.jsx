@@ -72,28 +72,15 @@ export default function Header() {
 
               <div>
                 <div className='d-flex gap-3 align-items-center'>
-                  <div className='d-flex align-items-center'>
-                    <TiLocation size='13px' color='white' opacity='0.7' />
-                    <strong style={{ fontSize: "18px" }}
-                      className='text-white opacity-75  font-monospace'>Ship to:</strong>
-                  </div>
-
                   <div>
                     <select className='form-select' name="lang" id="">
                       <option value="Canada">Canada</option>
-                      <option value="Use">Use</option>
+                      <option value="Use">USA</option>
                       <option value="Rus">Rus</option>
                     </select>
                   </div>
 
-                  <div className='d-flex align-items-center gap-3'>
-                    <strong className='text-white opacity-75  font-monospace'>Currency:</strong>
-                    <select className='form-select' name="lang" id="">
-                      <option value="USE">USE</option>
-                      <option value="RUS">RUS</option>
-                      <option value="UZB">UZB</option>
-                    </select>
-                  </div>
+
 
                   <a href=''
                     className='text-white d-flex align-items-center gap-2 opacity-75 font-monospace'>

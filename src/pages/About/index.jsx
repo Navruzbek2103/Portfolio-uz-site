@@ -1,1 +1,11 @@
-export {default} from "./About.jsx"
+import React from 'react';
+import "./style.scss";
+const About = () => {
+    return (
+        <div>
+            <h1>About</h1>
+        </div>
+    );
+};
+
+export default About;
