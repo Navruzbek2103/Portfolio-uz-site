@@ -38,6 +38,19 @@
                 align-items: center;
                 column-gap: 32px;
             }
+
+            .nav__link{
+                font-family: 'Inter', sans-serif;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 24px;
+                color: #1A1A1A;
+            }
+
+            .active{
+                color: red;
+            }
         }
 
 
