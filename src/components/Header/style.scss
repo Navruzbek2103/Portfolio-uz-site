@@ -42,14 +42,16 @@
             .nav__link{
                 font-family: 'Inter', sans-serif;
                 font-style: normal;
-                font-weight: 600;
+                font-weight: 400;
                 font-size: 14px;
                 line-height: 24px;
                 color: #1A1A1A;
+                border-bottom: 2px solid transparent;
             }
 
             .active{
-                color: red;
+                font-weight: 700;
+                border-bottom: 2px solid #111;
             }
         }
 
