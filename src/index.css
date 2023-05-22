@@ -48,6 +48,11 @@
       format("woff2"),
     url(".assets/fonts/inter-tight-v2-cyrillic_latin-600.woff") format("woff");
 }
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 html {
   position: relative;
