@@ -1,0 +1,296 @@
+.blog-page {
+  height: auto;
+  margin-bottom: 48px;
+
+  &__top {
+    margin: 48px 0 32px 0;
+
+    &-title {
+      font-family: 'Inter Tight' !important;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 44px;
+      line-height: 115%;
+      margin-bottom: 16px;
+      color: #1A1A1A;
+    }
+
+    &-text {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: #484848;
+    }
+  }
+
+  &__wrapper {
+    // border: 1px solid red;
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    &-left {
+      // border: 1px solid red;
+      max-width: 704px;
+      width: 100%;
+
+      &-topList {
+        // border: 1px solid red;
+        max-width: 292px;
+        width: 100%;
+        display: flex;
+        gap: 24px;
+        justify-content: space-between;
+        margin-bottom: 32px;
+      }
+
+      &-topItem {
+
+        &:first-child {
+          font-weight: 600;
+          color: #1A1A1A;
+          cursor: default;
+        }
+
+        cursor: pointer;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        color: #3C7D46;
+      }
+
+      &-cardList {
+        // border: 1px solid red;
+        display: flex;
+        gap: 24px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 24px;
+      }
+
+      &-cardItem {
+        width: calc((100% - 24px) / 2);
+
+        &:first-child {
+          // border: 1px solid red;
+          width: 100%;
+
+          .blog-page__wrapper-left-cardItem-link {
+            // border: 1px solid red;
+
+            &-imgBox {
+              height: 392px;
+            }
+
+            &-content {
+              // border: 1px solid red;
+              height: 140px;
+            }
+          }
+
+        }
+
+        &-link {
+          width: 100%;
+          // border: 1px solid red;
+          display: block;
+          background: #FFFFFF;
+          box-shadow: 0px 1px 2px rgba(28, 30, 34, 0.08), 0px 8px 16px rgba(28, 30, 34, 0.08);
+          border-radius: 8px;
+          transition: all .3s ease-in-out;
+
+          &:hover {
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+          }
+
+          &:active {
+            transform: scale(.96);
+          }
+
+
+          &-imgBox {
+            // border: 1px solid red;
+            width: 100%;
+            height: 190px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px 8px 0 0;
+            overflow: hidden;
+
+            &-img {
+              width: 100%;
+            }
+          }
+
+          &-content {
+            // border: 1px solid red;
+            padding: 16px;
+            height: 185px;
+            overflow: hidden;
+
+            &-status {
+              font-weight: 600;
+              font-size: 12px;
+              line-height: 16px;
+              display: inline-block;
+              margin-bottom: 12px;
+              border-radius: 4px;
+              padding: 2px 6px;
+            }
+
+            &-title {
+              font-family: 'Inter Tight';
+              font-weight: 600;
+              font-size: 18px;
+              line-height: 120%;
+              margin-bottom: 12px;
+              color: #1A1A1A;
+            }
+
+            &-text {
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 20px;
+              color: #484848;
+            }
+          }
+
+        }
+      }
+
+      // bu pagination paginatsiya qo'yilishi bilan olib tashlanadi
+      &-pagination {
+        // border: 1px solid red;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+    }
+
+    &-right {
+      position: sticky;
+      top: 0;
+      max-width: 392px;
+      width: 100%;
+      height: 100vh;
+      // border: 1px solid red;
+      overflow-y: scroll;
+
+      &::-webkit-scrollbar{
+        display: none;
+      }
+
+      &-title {
+        font-family: 'Inter Tight';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 120%;
+        margin-bottom: 32px;
+        color: #1A1A1A;
+      }
+
+      &-list {
+        // border: 1px solid red;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+      }
+
+      &-item {
+        width: 100%;
+        height: 120px;
+
+        &:first-child {
+          height: 324px;
+
+          .blog-page__wrapper-right-item-link {
+            flex-direction: column;
+            // border: 1px solid red;
+
+            &-imgBox {
+              max-width: 100%;
+              border-radius: 8px 8px 0 0;
+
+              &-img {
+                width: 100%;
+                height: auto;
+              }
+            }
+
+            &-content {
+              // border: 1px solid red;
+              max-width: 100%;
+            }
+          }
+        }
+
+        &-link {
+          background: #FFFFFF;
+          box-shadow: 0px 1px 2px rgba(28, 30, 34, 0.08), 0px 8px 16px rgba(28, 30, 34, 0.08);
+          border-radius: 8px;
+          display: flex;
+          height: 100%;
+          transition: all .3s ease-in-out;
+
+          &:hover {
+            box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+          }
+
+          &:active {
+            transform: scale(.96);
+          }
+
+          &-imgBox {
+            max-width: 160px;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px 0 0 8px;
+            // border: 1px solid red;
+
+            &-img {
+              height: 100%;
+            }
+          }
+
+          &-content {
+            max-width: 232px;
+            width: 100%;
+            padding: 16px;
+
+            &-status {
+              font-weight: 600;
+              font-size: 12px;
+              line-height: 16px;
+              padding: 2px 6px;
+              color: #0394FC;
+              margin-bottom: 8px;
+              background: #E6F4FF;
+              border-radius: 4px;
+              display: inline-block;
+            }
+
+            &-title {
+              font-weight: 600;
+              font-size: 16px;
+              line-height: 20px;
+              /* or 125% */
+
+
+              /* Gray 900 */
+
+              color: #1A1A1A;
+            }
+          }
+        }
+      }
+    }
+  }
+}
